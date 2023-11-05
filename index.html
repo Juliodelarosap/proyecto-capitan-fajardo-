@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF Technology</title>
+    <link rel="stylesheet" href="style.css"> <!-- Tu archivo de estilo principal -->
+
+    <!-- Enlace a la fuente de Google Fonts para el menú -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace al archivo de estilo de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMG/Logo_RF_Tech.png" alt="Logo de RF Technology">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="mochilas.html"><i class="fas fa-suitcase"></i> Mochilas</a></li>
+                <li><a href="mochilas-cruzadas.html"><i class="fas fa-suitcase"></i> Mochilas Cruzadas</a></li>
+                <li><a href="maletas.html"><i class="fas fa-suitcase-rolling"></i> Maletas</a></li>
+                <li><a href="equipaje-de-mano.html"><i class="fas fa-briefcase"></i> Equipaje de Mano</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Mochilas">
+        <h2>Productos</h2>
+        <ul>
+            <li>Mochilas</li>
+            <li>Mochilas cruzadas</li>
+            <li>Maletas</li>
+            <li>Equipaje de mano</li>
+        </ul>
+    </div>
+    <section class="Main">
+        <h2>Bienvenido a RF Technology</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, doloremque explicabo dicta consectetur dolorem et veritatis esse? In optio hic iusto cumque commodi aperiam consequatur obcaecati tempore, dolore perspiciatis architecto?</p>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; RF Technology</p>
+            <p id="current-year"></p>
+        </div>
+    </footer>
+    <script>
+        // JavaScript para actualizar automáticamente el año en el footer
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('current-year').textContent = currentYear;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.logo img {
+    width: 250px; /* Tamaño del logotipo ajustable */
+    margin-left: 20px; /* Margen izquierdo para la posición en la esquina superior izquierda */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #111010;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Negrita */
+    margin-right: 20px; /* Espaciado entre elementos del menú */
+}
+
+nav ul.categories {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.categories li {
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul.categories li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
