@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Rafatecnology</title>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="wrapper container">
+        <div class="logo"><a href="">
+        <img src="./images/logo.png" alt="">
+      </a>
+      </div>
+        <ul class="nav-list">
+          <div class="top">
+            <label for="" class="btn close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Productos</a></li>
+          <li>
+            <a href="" class="desktop-item"
+              >Tienda <span><i class="fas fa-chevron-down"></i></span
+            ></a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item"
+              >Tienda <span><i class="fas fa-chevron-down"></i></span
+            ></label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                <img src="./images/nav.jpg" alt="" />
+                </div>
+                <div class="row">
+                  <header>Tienda</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Mochilas</a></li>
+                  <li><a href="#">Bultos</a></li>
+                  </ul>
+                </div>
+                
+                <div class="row">
+                  <header>Productos</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Bultos</a></li>
+                  <li><a href="#">Mochilas</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+         
+
+          
+          <!-- icons -->
+          <li class="icons">
+            <a href="cart.html">
+              <span>
+                <img src="./images/shoppingBag.svg" alt="" />
+                <small class="count d-flex">0</small>
+              </span>
+            </a>
+            <span><img src="./images/search.svg" alt="" /></span>
+          </li>
+        </ul>
+        <label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
+      </div>
+    </nav>
+
+    <!-- Cart Items -->
+    <div class="container cart">
+      <table>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/product-1.png" alt="" />
+              <div>
+                <p>Modelo BG-2602</p>
+                <span>Precio:RD$3,500</span>
+                <br />
+                <a href="#">Eliminar</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>RD$3,500</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/product-2.png" alt="" />
+              <div>
+                <p>Modelo BG-2517</p>
+                <span>Precio: RD$3,300</span>
+                <br />
+                <a href="#">Eliminar</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>RD$3,300</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/product-3.png" alt="" />
+              <div>
+                <p>Modelo BG-2913</p>
+                <span>Precio: RD$3,350</span>
+                <br />
+                <a href="#">Eliminar</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>RD$3,350</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/product-4.png" alt="" />
+              <div>
+                <p>Modelo BG-7566</p>
+                <span>Precio: RD$2,650</span>
+                <br />
+                <a href="#">Eliminar</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>RD$2,650</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/product-5.png" alt="" />
+              <div>
+                <p>Modelo BG-1921</p>
+                <span>Precio: RD$2,500</span>
+                <br />
+                <a href="#">Eliminar</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" min="1" /></td>
+          <td>RD$2,500</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>RD$15,300</td>
+          </tr>
+          <tr>
+            <td>Impuestos</td>
+            <td>RD$2,500</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>RD$17,800</td>
+          </tr>
+        </table>
+        <a href="#" class="checkout btn">Pagar</a>
+      </div>
+    </div>
+
+     <!-- Footer -->
+     <footer id="footer" class="section footer">
+      <div class="container">
+        <div class="footer-container">
+          
+          <div class="footer-center">
+            <h3>INFORMACIÓN</h3>
+            <a href="#">Nosotros</a>
+            <a href="#">política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Mapa</a>
+          </div>
+          
+          <div class="footer-center">
+            <h3>CONTÁCTENOS</h3>
+            <div>
+              <span>
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              Distrito nacional,Santo domingo.
+            </div>
+            <div>
+              <span>
+                <i class="far fa-envelope"></i>
+              </span>
+              rftechnologydr@gmail.com
+            </div>
+            <div>
+              <span>
+                <i class="fas fa-phone"></i>
+              </span>
+              +1809-856-2723
+            </div>
+            <div class="payment-methods">
+              <img src="./images/payment.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+  <!-- End Footer -->
+
+    <!-- Custom Scripts -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

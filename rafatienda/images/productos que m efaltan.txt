@@ -1,0 +1,15 @@
+productos-----------
+
+product-11
+product-12
+product-13
+product-14
+
+y me faltan las promociones 
+
+promo1
+promo2
+promo3
+promo4
+promo5
+promo6
