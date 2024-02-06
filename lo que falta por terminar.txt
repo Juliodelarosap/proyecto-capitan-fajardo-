@@ -1,0 +1,6 @@
+1. terminar la pagina administrador 
+2. corregir algunos bugs del navbar en el modo responsive 
+3. agregar metodo de pago por paypal y via whatsapp
+4.agregar una nueva tabla a la base de datos para el administrador
+5. anadir animacion scroll en algunos productos.
+6. desplegar proyecto.
