@@ -2,17 +2,17 @@
 
 session_start();
 
-// Asegurarse de que el carrito esté definido y sea un array
+// me aseguro de que el carrito esté definido y sea un array
 if (!isset($_SESSION['cart']) || !is_array($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }
 
-// Asegurarse de que el total esté definido
+// me aseguro de que el total esté definido
 if (!isset($_SESSION['total'])) {
     $_SESSION['total'] = 0;
 }
 
-// Añadir producto al carrito
+// anado el  producto al carrito
 if (isset($_POST['add_to_cart'])) {
     // Si el usuario ya tiene productos en el carrito
     if (isset($_SESSION['cart'])) {
@@ -55,7 +55,7 @@ if (isset($_POST['add_to_cart'])) {
     calcularTotalCarrito();
 }
 
-// Eliminar producto del carrito
+// aqui se efectua  la eliminacion de  productos del carrito
 else if (isset($_POST['remove_product'])) {
     $product_id = $_POST['product_id'];
     unset($_SESSION['cart'][$product_id]);
@@ -81,12 +81,12 @@ else if(isset($_POST['edit_quantity'])){
     calcularTotalCarrito();
 }
 
-// Redireccionar si no hay operaciones válidas
+// Redireccionar si no hay operaciones validadas
 else {
     // header('location:index.php');
 }
 
-// Aquí calculo el total de elementos del carro
+// aqui calculo el total de elementos del carro
 function calcularTotalCarrito() {
     $total = '0';
 
@@ -94,14 +94,14 @@ function calcularTotalCarrito() {
         $price = $value['product_price'];
         $quantity = $value['product_quantity'];
 
-        // Multiplicar precio y cantidad usando BCMath
+        //  aqui se multiplica precio y cantidad usando bcmul
         $subtotal = bcmul($price, $quantity, 2);
 
-        // Sumar al total usando BCMath
+        // sumamaos usando bcadd
         $total = bcadd($total, $subtotal, 2);
     }
 
-    // Almacenar el total en la sesión
+    // almacenamos el total en la session
     $_SESSION['total'] = $total;
 }
 
