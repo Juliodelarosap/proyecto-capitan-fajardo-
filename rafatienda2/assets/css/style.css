@@ -1,0 +1,302 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap');
+
+
+
+.nav-buttons{
+    margin-left: 65%;
+}
+
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif ;
+   /* color: white; */
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6{
+    color: #D8D8D8;
+}
+
+button{
+
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color:aliceblue ;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5 ease;
+}
+
+button:hover{
+    background-color:rgb(14, 79, 165) ; 
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar i {
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 60px;
+    color: #000000;
+    font-weight: 400;
+}
+
+/* Effect on hover for links */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(53, 11, 205);
+}
+
+/* Effect on hover for icons */
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    /* font-weight: 500; */
+    cursor: pointer;
+}
+
+.navbar i:hover {
+    color: rgb(53, 11, 205);
+}
+/* estilos responsives para el navbar modo celular */
+@media only screen and(max-width:990px){
+   .nav-buttons{
+    margin: 10px;
+   }
+
+   .nav-buttons ul{
+    margin: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+   }
+
+   .nav-buttons ul .fas{
+     margin: 20px 5px 10px 20px;
+   }
+    
+   
+}
+
+#home{
+background-image: url(../imgs/banner1.png);
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position-x: 130px ;
+background-position-y: 80px ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+
+
+#home span{
+    color:rgb(14, 79, 165) ;
+}
+
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(135, 179, 222);
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.8;
+    background-color: rgb(1,1,1) ;
+    width: 100%;
+    height: 100%;
+}
+
+#new .one .details:hover{
+    background-color: rgb(220, 230, 255);
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+ /*seccion de productos*/
+.product{
+    cursor:  pointer;
+   margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+#banner{
+background-image: url(../imgs/banner2.png);
+width: 100%;
+height: 75vh;
+background-size: cover;
+background-position-x: center ;
+background-position-y: 80px ;
+background-repeat: no-repeat;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+
+#banner h1{
+    color:rgb(14, 79, 165) ;
+}
+
+
+#banner button{
+    background-color: rgb(14, 79, 165) ;
+}
+
+#banner button:hover{
+    background-color: rgb(9, 47, 96) ;
+}
+
+footer{
+    background-color: #222222;
+}
+footer h5{
+    color: #D8D8D8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color:#999;
+    text-decoration: none;
+    }
+footer li a:hover{
+    color: #D8D8D8;
+}
+
+footer .copyright a{
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+
+}
+
+footer .copyright a:hover{
+    color: #fff;
+    background-color: rgb(14, 79, 165);
+}
+
+
+footer p{
+    color: #fff;
+
+}
+
+footer .copyright img{
+    width: 150px;
+
+}
+
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.navbar .brand{
+    color: rgb(14, 79, 165);
+    margin: 3px 5px;
+    font-size: 1.5rem;
+}
+
+
+/*tienda*/
